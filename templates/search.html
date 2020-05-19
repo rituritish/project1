@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block title %} search books
+{% endblock  %}
+
+{% block body %}
+
+<h1>Welcome to BOOK hopper</h1>
+
+<h3>Search Results</h3>
+
+
+<form method="POST">
+    <div class="container">
+       <div class="form-group">
+            <label for="usr">ISBN:</label>
+            <input type="text" class="form-control" id="usr" name="nameisbn">
+        </div>
+        <div class="form-group">
+            <label for="usr">TITLE:</label>
+            <input type="text" class="form-control" id="usr" name="name">
+        </div>
+        <div class="form-group">
+            <label for="usr">AUTHOR:</label>
+            <input type="text" class="form-control" id="usr" name="nameauthor">
+        </div>
+        <div class="form-group">
+           <button type="submit" class="btn btn-primary">SEARCH</button>
+             <!--<a href="{{ url_for('result',titles=name) }}">SEARCH </a>-->
+        </div>
+    </div>  
+</form>
+
+{% endblock %}

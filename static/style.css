@@ -1,0 +1,17 @@
+.grid {
+    display: -ms-grid;
+    display: grid;
+    padding: 200px;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
